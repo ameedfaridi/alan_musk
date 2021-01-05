@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//import Next from "./components/next";
+import Root from "./components/root";
+import "./style.scss";
 
-function App() {
+// const getPage = (step, setStep) => {
+//   switch (step) {
+//     case 0:
+//       return <Root setStep={setStep} />;
+//     case 1:
+//       return <Next setStep={setStep} />;
+//     default:
+//       return <div>404</div>;
+//   }
+// };
+
+const Home = () => {
+  // const [step, setStep] = React.useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* {getPage(step, setStep)} */}
+      <Root />
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
